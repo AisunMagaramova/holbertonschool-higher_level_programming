@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-list_division = __import__('4-list_division').list_division
+#!/usr/bin/python3
+safe_print_list_integers = __import__('2-safe_print_list_integers').safe_print_list_integers
 
-my_l_1 = [10, 8, 4]
-my_l_2 = [2, 4, 4]
-result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))
-print(result)
+my_list = [1, 2, 3, 4]
+x = len(my_list) + 4  # Bu testdə x 8 olacaq, amma listin uzunluğu 4dür
 
-print("--")
-
-my_l_1 = [10, 8, 4, 4]
-my_l_2 = [2, 0, "H", 2, 7]
-result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))
-print(result)
+nb_print = safe_print_list_integers(my_list, x)
+print("nb_print: {:d}".format(nb_print))
