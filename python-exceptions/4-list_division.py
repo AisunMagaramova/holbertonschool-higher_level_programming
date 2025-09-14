@@ -24,7 +24,6 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
         finally:
             # This block will run after every iteration, regardless of exceptions
-            # It ensures that we append the result and print relevant messages
             pass
 
     return result
