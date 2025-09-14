@@ -22,8 +22,10 @@ def list_division(my_list_1, my_list_2, list_length):
             # Handle out of range error
             result.append(0)
             print("out of range")
-        finally:
-            # This block will run after every iteration, regardless of exceptions
-            pass
+        except Exception as e:
+            # Catch any other unforeseen errors and handle them gracefully
+            result.append(0)
+            # Split the error message to avoid exceeding 79 characters
+            print("Error: " + str(e))  # Breaking the message into smaller parts
 
     return result
