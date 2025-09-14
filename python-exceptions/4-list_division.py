@@ -9,12 +9,11 @@ def list_division(my_list_1, my_list_2, list_length):
 
             # Check if both elements are either integers or floats
             if isinstance(element_1, (int, float)) and isinstance(element_2, (int, float)):
-                # Try to perform division
+                # Perform division
                 result.append(element_1 / element_2)
             else:
                 result.append(0)
                 print("wrong type")
-
         except ZeroDivisionError:
             # Handle division by zero error
             result.append(0)
@@ -23,9 +22,9 @@ def list_division(my_list_1, my_list_2, list_length):
             # Handle out of range error
             result.append(0)
             print("out of range")
-        except Exception as e:
-            # Catch any other unforeseen errors and handle them gracefully
-            result.append(0)
-            print(f"Error: {e}")
+        finally:
+            # This block will run after every iteration, regardless of exceptions
+            # It ensures that we append the result and print relevant messages
+            pass
 
     return result
