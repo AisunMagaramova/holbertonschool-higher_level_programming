@@ -6,7 +6,7 @@ def list_division(my_list_1, my_list_2, list_length):
             # Check if the lists are long enough to access the current index
             element_1 = my_list_1[i]
             element_2 = my_list_2[i]
-
+            
             # Check if both elements are either integers or floats
             if isinstance(element_1, (int, float)) and isinstance(element_2, (int, float)):
                 # Perform division
@@ -22,10 +22,8 @@ def list_division(my_list_1, my_list_2, list_length):
             # Handle out of range error
             result.append(0)
             print("out of range")
-        except Exception as e:
-            # Catch any other unforeseen errors and handle them gracefully
-            result.append(0)
-            # Split the error message to avoid exceeding 79 characters
-            print("Error: " + str(e))  # Breaking the message into smaller parts
+        finally:
+            # This block will run after every iteration, regardless of exceptions
+            pass
 
     return result
