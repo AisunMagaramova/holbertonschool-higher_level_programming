@@ -9,5 +9,4 @@ def safe_print_division(a, b):
     finally:
         # Print the result inside the finally block
         print("Inside result: {}".format(result))
-    
     return result
