@@ -3,12 +3,15 @@ def safe_print_list_integers(my_list=[], x=0):
     count = 0
     for i in range(x):
         try:
-            # Check if the current element is an integer
+            # Çap edirik yalnız integer-ləri
             if isinstance(my_list[i], int):
                 print("{:d}".format(my_list[i]), end="")
                 count += 1
         except IndexError:
-            # If x is larger than the length of my_list, break the loop
+            # Əgər x uzunluqdan böyükdürsə, traceback çap et
+            print("\nTraceback (most recent call last):")
+            print(f"  File \"{__file__}\", line {i+1}, in <module>")
+            print("IndexError: list index out of range")
             break
-    print()  # To print the newline after the output
+    print()  # Sətir sonu
     return count
