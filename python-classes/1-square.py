@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 class Square:
     """
     Kvadrat sinifi, size atributu ile olcusunu teyin edirik.
@@ -10,4 +10,4 @@ class Square:
         Yeni kvadrat sinifi yarat.
         :param size, kvadartin olcusu
         """
-        self.size = size
+        self.__size = size
