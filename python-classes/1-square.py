@@ -1,24 +1,7 @@
 #!/usr/bin/python3
-"""
-Kvadrat sinifi, size atributu ile olcusunu teyin edirik.
-"""
-
 class Square:
+    """ Kvadrat teyin edilir """
+
     def __init__(self, size):
-        """
-        Yeni kvadrat sinifi yarat.
-        :param size: kvadratın ölçüsü
-        """
+        """ Pirivate size ilile kvadrat ise salinir """
         self.__size = size
-
-    @property
-    def size(self):
-        """
-        size atributunun getter metodu.
-        """
-        return self.__size
-
-
-if __name__ == "__main__":
-    my_square = Square(3)
-    print(my_square.size)
