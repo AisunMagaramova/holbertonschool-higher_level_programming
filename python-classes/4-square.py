@@ -26,4 +26,3 @@ class Square:
     def area(self):
         """Kvadratın saesini qaytarır."""
         return self.__size ** 2
-
