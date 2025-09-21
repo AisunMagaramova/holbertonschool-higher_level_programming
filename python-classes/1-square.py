@@ -19,8 +19,6 @@ class Square:
         return self.__size
 
 
-# Sinifdən obyekt yaradılması və çap edilməsi modul səviyyəsində
 if __name__ == "__main__":
     my_square = Square(3)
-    print(my_square.size)        # 3
-    # print(my_square.__size)    # Bu xəta verər, gizli atributa birbaşa müraciət olmaz
+    print(my_square.size)
