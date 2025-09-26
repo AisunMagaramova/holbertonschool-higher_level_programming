@@ -20,3 +20,4 @@ def lookup(obj):
     A list containing the names of the attributes and methods of the object.
     """
     return dir(obj)
+    
