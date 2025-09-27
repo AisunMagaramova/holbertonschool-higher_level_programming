@@ -12,11 +12,12 @@ Square inherits from Rectangle. It represents a square, where both the width and
 and the size is validated to be a positive integer.
 """
 
+
 class BaseGeometry:
     """
     A base class with basic geometric operations.
     """
-
+    
     def area(self):
         """
         Raises an Exception if area() is not implemented in subclass.
@@ -47,13 +48,13 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)  # Validate height
         self.__width = width  # Set the width
         self.__height = height  # Set the height
-
+    
     def area(self):
         """
         Returns the area of the rectangle.
         """
         return self.__width * self.__height
-
+    
     def __str__(self):
         """
         Returns a string representation of the rectangle.
@@ -66,22 +67,22 @@ class Square(Rectangle):
     A class representing a square, which inherits from Rectangle.
     The size of the square is validated and used as both the width and height.
     """
-
+    
     def __init__(self, size):
         """
         Initializes a square object with size.
         The size must be a positive integer and is used for both width and height.
         """
-        self.integer_validator("size", size)
-        self.__size = size
-        super().__init__(size, size)
-
+        self.integer_validator("size", size)  # Validate size
+        self.__size = size  # Set the size (both width and height)
+        super().__init__(size, size)  # Call Rectangle's constructor with size for width and height
+    
     def area(self):
         """
         Returns the area of the square.
         """
         return self.__size ** 2
-
+    
     def __str__(self):
         """
         Returns a string representation of the square.
