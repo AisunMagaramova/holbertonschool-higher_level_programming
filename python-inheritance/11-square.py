@@ -9,6 +9,7 @@ Square inherits from Rectangle.  where both the width and height are equal,
 and the size is validated to be a positive integer.
 """
 
+
 class BaseGeometry:
     """
     A base class for geometric objects.
