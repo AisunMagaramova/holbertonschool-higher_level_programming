@@ -15,8 +15,10 @@ class VerboseList(list):
 
     def pop(self, index=None):
         if index is None:
-            item = super().pop()
+            item = super().pop()  # Sonuncu elementi pop edir
             print(f"Popped [{item}] from the list.")
+            return item  # Elementi qaytarırıq
         else:
-            item = super().pop(index)
+            item = super().pop(index)  # İstədiyiniz indeksdən pop edir
             print(f"Popped [{item}] from the list.")
+            return item
