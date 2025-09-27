@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import unittest
 from task_01_duck_typing import Circle
 
@@ -10,7 +8,7 @@ class TestCircle(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             Circle(radius=-5)
         
-        # Bu sətir testin düzgün işləyişi üçün lazımdır
+        # Xətanın doğru mesajla atıldığını yoxlayırıq
         self.assertEqual(str(context.exception), "Radius cannot be negative")
 
 # Testi işə salırıq
