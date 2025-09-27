@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 """
 This module contains the BaseGeometry, Rectangle, and Square classes.
-BaseGeometry provides basic geometric operations, including a method to validate integer values
-and a method for calculating the area (which is not implemented in BaseGeometry itself).
-Rectangle inherits from BaseGeometry and represents a rectangle with a width and height.
+BaseGeometry provides basic geometr including a method to validate integer values
+and a method for calculating the are
+Rectangle inherits from BaseGeometry and represents a rectangl height.
 The width and height are validated and must be positive integers.
-Square inherits from Rectangle. It represents a square, where both the width and height are equal,
+Square inherits from Rectangle.  where both the width and height are equal,
 and the size is validated to be a positive integer.
 """
 
 class BaseGeometry:
     """
     A base class for geometric objects.
-    Contains a method for validating integer values and a placeholder for the area method.
+    Contains a method for validating integer values and a placeholdermethod.
     """
-    
+
     def integer_validator(self, name, value):
         """
         Validates that the given value is a positive integer.
@@ -35,16 +35,16 @@ class Rectangle(BaseGeometry):
     """
     A class representing a rectangle, inherited from BaseGeometry.
     """
-    
+
     def __init__(self, width, height):
         """
-        Initializes the rectangle with width and height, validated by integer_validator.
+        Initializes the rectangle with width and height, integer_validator.
         """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width  # Set the width of the rectangle
         self.__height = height  # Set the height of the rectangle
-    
+
     def area(self):
         """
         Returns the area of the rectangle (width * height).
@@ -53,7 +53,7 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """
-        Returns a string representation of the rectangle: [Rectangle] <width>/<height>.
+        Returns a string representation of the rectangle:
         """
         return f"[Rectangle] {self.__width}/{self.__height}"
 
@@ -62,7 +62,7 @@ class Square(Rectangle):
     """
     A class representing a square, inherited from Rectangle.
     """
-    
+
     def __init__(self, size):
         """
         Initializes the square with a given size.
@@ -71,7 +71,7 @@ class Square(Rectangle):
         self.integer_validator("size", size)  # Validate size
         self.__size = size  # Set the size (both width and height)
         super().__init__(size, size)  # Call the Rectangle's constructor
-    
+
     def area(self):
         """
         Returns the area of the square (size * size).
