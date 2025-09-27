@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# task_01_duck_typing.py
+
 from abc import ABC, abstractmethod
 import math
 
@@ -35,8 +35,7 @@ class Rectangle(Shape):
     def perimeter(self):
         return 2 * (self.width + self.height)
 
-# shape_info funksiyasını bura əlavə et
+# shape_info funksiyasını əlavə et
 def shape_info(shape):
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
-
