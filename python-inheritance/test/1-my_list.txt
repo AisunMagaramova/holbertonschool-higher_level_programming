@@ -1,0 +1,24 @@
+Test Case 1:
+Original list: [1, 4, 2, 3, 5]
+Sorted list: [1, 2, 3, 4, 5]
+Original list after sorting: [1, 4, 2, 3, 5]
+
+Test Case 2:
+Original list: [10, 30, 20]
+Sorted list: [10, 20, 30]
+Original list after sorting: [10, 30, 20]
+
+Test Case 3:
+Original list: [3, 1, 2]
+Sorted list: [1, 2, 3]
+Original list after sorting: [3, 1, 2]
+
+Test Case 4:
+Original list: [0, -1, -5]
+Sorted list: [-5, -1, 0]
+Original list after sorting: [0, -1, -5]
+
+Test Case 5:
+Original list: [1]
+Sorted list: [1]
+Original list after sorting: [1]
