@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-from 7-base_geometry import BaseGeometry
 """
 This module contains a class 'Rectangle' that represents a rectangle.
 It inherits from BaseGeometry.
