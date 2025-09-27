@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 def is_same_class(obj, a_class):
-    """ Function that checks if the object is exactly an instance of the specified class.
+    """
+    Function that checks if the object is exactly an instance of the specified class.
 
     Parameters:
     obj (object): The object to check.
@@ -15,7 +16,11 @@ def is_same_class(obj, a_class):
     >>> is_same_class(5, int)
     True
     >>> is_same_class(5, str)
-    False"""
-
+    False
+    """
     return type(obj) is a_class
-    
+
+# Test the function
+if __name__ == "__main__":
+    print(is_same_class(5, int))
+    print(is_same_class(5, str))
