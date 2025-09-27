@@ -19,7 +19,7 @@ def inherits_from(obj, a_class):
     Returns:
     bool: True if the object is an instance of a class that inherited from
           the specified class, False otherwise.
-    
+
     Example:
     >>> inherits_from(5, int)
     False
@@ -30,16 +30,17 @@ def inherits_from(obj, a_class):
     """
     return isinstance(obj, a_class) and type(obj) is not a_class
 
+
 # Test the function
 if __name__ == "__main__":
     # Test with an integer object and the int class
     print(inherits_from(5, int))
-    
+
     # Test with an integer object and the object class (base class)
     print(inherits_from(5, object))
-    
+
     # Test with a boolean object and the int class
     print(inherits_from(True, int))
-    
+
     # Test with a string object and the int class
     print(inherits_from("hello", int))
