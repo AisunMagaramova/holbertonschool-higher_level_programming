@@ -30,7 +30,7 @@ def is_kind_of_class(obj, a_class):
     """
     return isinstance(obj, a_class)
 
-    
+
 # Test the function
 if __name__ == "__main__":
     # Test with an integer object and the int class
