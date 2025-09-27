@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This module contains the BaseGeometry, Rectangle, and Square classes.
-BaseGeometry provides basic geometr including a method to validate integer values
+BaseGeometry provides basic geometr including a method integer values
 and a method for calculating the are
 Rectangle inherits from BaseGeometry and represents a rectangl height.
 The width and height are validated and must be positive integers.
