@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+
+
+"""
+This module contains a function 'is_same_class' that checks if an object
+is exactly an instance of the specified class.
+"""
+
+
 class BaseGeometry:
     """
     A base class for geometry shapes.
@@ -29,10 +37,10 @@ class Rectangle(BaseGeometry):
         """
         Initializes the rectangle with width and height and validates them.
         """
-        self.integer_validator("width", width)  # Validate width
-        self.integer_validator("height", height)  # Validate height
-        self.__width = width  # Set the width
-        self.__height = height  # Set the height
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
 
     def area(self):
         """
