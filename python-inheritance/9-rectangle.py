@@ -1,5 +1,19 @@
 #!/usr/bin/python3
 
+
+"""
+This module contains the BaseGeometry and Rectangle classes.
+
+The BaseGeometry class provides basic geometric operations, including
+a method to validate integer values and a method for calculating the area
+(which is not implemented in BaseGeometry itself).
+
+The Rectangle class inherits from BaseGeometry and represents a rectangle
+with a width and height. It validates the width and height, calculates the
+area of the rectangle, and returns a string representation of the rectangle.
+"""
+
+
 class BaseGeometry:
     """
     A base class with basic geometric operations
