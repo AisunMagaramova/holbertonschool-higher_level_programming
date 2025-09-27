@@ -9,7 +9,7 @@ is exactly an instance of the specified class.
 
 def is_kind_of_class(obj, a_class):
     """
-    Function that checks if the object is an instance of, or if the object is an
+    Funcn that checks if the object an instance of or if the objectan
     instance of a class that inherited from, the specified class.
 
     Parameters:
@@ -17,9 +17,9 @@ def is_kind_of_class(obj, a_class):
     a_class (type): The class to check against.
 
     Returns:
-    bool: True if the object is an instance of, or if the object is an instance of
+    bool: True if the object instance of or if the object instance of
           a class that inherited from, the specified class, False otherwise.
-    
+
     Example:
     >>> is_kind_of_class(5, int)
     True
@@ -30,6 +30,7 @@ def is_kind_of_class(obj, a_class):
     """
     return isinstance(obj, a_class)
 
+    
 # Test the function
 if __name__ == "__main__":
     # Test with an integer object and the int class
