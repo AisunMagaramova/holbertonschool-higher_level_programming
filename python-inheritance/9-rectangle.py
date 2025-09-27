@@ -7,8 +7,6 @@ is exactly an instance of the specified class.
 """
 
 
-from 7-base_geometry import BaseGeometry
-
 class Rectangle(BaseGeometry):
     """
     Rectangle sinifi BaseGeometry sinifindən irs alır və düzbucaqlı obyektini təmsil edir.
