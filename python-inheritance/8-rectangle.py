@@ -46,7 +46,7 @@ class Rectangle(BaseGeometry):
     Methods:
     area(): Returns the area of the rectangle.
     """
-    
+
     def __init__(self, width, height):
         """
         Initializes the rectangle with width and height. Both attributes are validated
@@ -59,7 +59,7 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height 
-    
+
     def area(self):
         """
         Returns the area of the rectangle.
@@ -67,7 +67,7 @@ class Rectangle(BaseGeometry):
         int: The area of the rectangle (width * height).
         """
         return self.__width * self.__height
-    
+
     def __str__(self):
         """
         Return a string representation of the Rectangle object.
