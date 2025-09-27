@@ -1,11 +1,5 @@
 #!/usr/bin/python3
-
-
-"""
-This module contains a function 'is_same_class' that checks if an object
-is exactly an instance of the specified class.
-"""
-
+from 7-base_geometry import BaseGeometry  # BaseGeometry sinifini import edin
 
 class Rectangle(BaseGeometry):
     """
@@ -22,10 +16,10 @@ class Rectangle(BaseGeometry):
         width: Düzbucaqlının eni (tam ədəd)
         height: Düzbucaqlının hündürlüyü (tam ədəd)
         """
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
-        self.__width = width
-        self.__height = height
+        self.integer_validator("width", width)  # Enin düzgünlüyünü yoxla
+        self.integer_validator("height", height)  # Hündürlüyün düzgünlüyünü yoxla
+        self.__width = width  # En dəyərini təyin et
+        self.__height = height  # Hündürlük dəyərini təyin et
 
     def area(self):
         """
@@ -44,3 +38,4 @@ class Rectangle(BaseGeometry):
             str: "[Rectangle] <width>/<height>"
         """
         return f"[Rectangle] {self.__width}/{self.__height}"
+
