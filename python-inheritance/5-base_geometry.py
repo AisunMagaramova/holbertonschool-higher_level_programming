@@ -13,4 +13,3 @@ class BaseGeometry:
     This class is empty for now.
     """
     pass
-    
