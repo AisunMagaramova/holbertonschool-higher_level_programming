@@ -1,0 +1,2 @@
+-- CEDVELIN TAM TESVIRINI CAP EDIR 
+SELECT * FROM first_table; 
