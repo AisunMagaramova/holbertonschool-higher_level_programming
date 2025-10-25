@@ -1,2 +1,2 @@
 -- Butun sutunlari goster
-SELECT DATABASES;
+SHOW DATABASES;
