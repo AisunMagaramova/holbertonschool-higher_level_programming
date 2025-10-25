@@ -1,2 +1,2 @@
---Butun sutunlari goster
-SELECT * FROM DATABASES;
+-- Butun sutunlari goster
+SELECT DATABASES;
