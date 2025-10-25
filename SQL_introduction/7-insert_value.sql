@@ -1,2 +1,2 @@
 -- yeni melumat elave et
-INSERT INTO first_table ('name', 'id') VALUES ('Best School', '89');
+INSERT INTO first_table ('id', 'name') VALUES ('89', 'Best School');
