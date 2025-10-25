@@ -1,2 +1,2 @@
 -- CEDVELIN TAM TESVIRINI CAP EDIR 
-SELECT * FROM first_table; 
+SELECT * FROM hbtn_0c_0;
