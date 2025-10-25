@@ -1,0 +1,5 @@
+-- ILK TABLE YARADIR VE ID VE AD VERIR
+CREATE TABLE first_table(
+	id INT
+	name VARCHAR(256)
+);
