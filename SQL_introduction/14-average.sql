@@ -1,2 +1,3 @@
 -- cedvelde butun qeydeleerin bal ortalalmsidni tsp
-SELECT AGV(score) FROM second_table;
+SELECT AVG(score) AS average
+FROM second_table;
