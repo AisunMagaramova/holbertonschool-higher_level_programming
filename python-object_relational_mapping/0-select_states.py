@@ -1,26 +1,30 @@
 #!/usr/bin/python3
-"""
-This script lists all states from the
-database `hbtn_0e_0_usa`.
-"""
-
 import MySQLdb
-from sys import argv
+import sys
 
-if __name__ == '__main__':
-    # Connect to the database
-    db = MySQLdb.connect(host="localhost", user=argv[1], passwd=argv[2],
-                         db=argv[3], port=3306)
+# Əgər skript birbaşa icra edilirsə
+if __name__ == "__main__":
+    # Argumentləri al
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
+
+    # MySQL serverinə qoşul
+    db = MySQLdb.connect(host="localhost", user=username, passwd=password, db=database)
+
+    # Cursor yarad
     cur = db.cursor()
 
-    # Retrieve all states sorted by id
+    # States cədvəlini seç və sıralı şəkildə məlumatları al
     cur.execute("SELECT * FROM states ORDER BY id ASC")
+
+    # Bütün nəticələri al
     rows = cur.fetchall()
 
-    # Print each row
+    # Nəticələri çap et
     for row in rows:
         print(row)
 
-    # Close cursor and connection
+    # Bağlantını bağla
     cur.close()
     db.close()
