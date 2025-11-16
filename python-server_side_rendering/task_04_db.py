@@ -69,5 +69,4 @@ def products():
             id_value = int(id_param)
             filtered = [item for item in data if item.get('id') == id_value]
             if not filtered:
-                return render_template('product_display.html', error="Product not fou
-
+                return render_template('product_display.html', error="Product not fou"
