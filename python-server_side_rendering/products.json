@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Jarvis",
+        "price": 799.99,
+        "category": "Electronics"
+    },
+    {
+        "id": 2,
+        "name": "Coffee Mug",
+        "price": 15.99,
+        "category": "Home Goods"
+    }
+]
